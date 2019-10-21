@@ -5,7 +5,7 @@ cont = 0
 
 def incrementar():
     global cont
-    #cont = 0
+    print(cont)
     cont += 5
 
 
