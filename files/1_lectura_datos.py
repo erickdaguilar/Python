@@ -11,8 +11,10 @@ while running:
     valor_2 = 0
     print ("---Calculadora---")
     print ("1- Sumar")
-    print ("2- Multiplicar")
-    print ("3- Salir")
+    print ("2-Restar")
+    print ("3 Multiplicar")
+    print ("4-Division")
+    print ("5-Salir")
     op = int(input('Opcion: '))
     if op == 1:
         print ("---Sumar---")
@@ -22,11 +24,28 @@ while running:
         suma = valor_1 + valor_2
         print ("El resultado es: %d" % suma)
     elif op == 2:
+        print ("---Restar---")
+        valor_1 = float(input(''))
+        print (" - ")
+        valor_2 = float(input(''))
+        resta = valor_1 - valor_2
+        print ("El resultado es: %d" % resta)
+    elif op == 3:
         print ("---Multiplicar---")
         valor_1 = float(input(''))
         print (" x ")
         valor_2 = float(input(''))
         multiplicacion = valor_1 * valor_2
         print ("El resultado es: %d" % multiplicacion)
-    elif op == 3:
+    elif op == 4:
+        print ("---Division---")
+        valor_1 = float(input(''))
+        print (" / ")
+        valor_2 = float(input(''))
+        if valor_2 == 0:
+            print ("No se puede dividir entre cero")
+        else:
+            division = valor_1 / valor_2
+            print ("El resultado es: %d" % division)
+    else:
         running = False
